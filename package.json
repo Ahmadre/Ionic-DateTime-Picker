@@ -1,0 +1,26 @@
+{
+  "name": "ionic3-picker",
+  "version": "1.0.0",
+  "description": "Hybrid Date-/Datetimepicker for Ionic/Angular",
+  "main": "index.js",
+  "keywords": [
+    "ionic",
+    "angular",
+    "datepicker",
+    "datetimepicker",
+    "picker",
+    "android-picker",
+    "ios-picker",
+    "wheel-picker"
+  ],
+  "author": "Rebar Ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "ionicons": "3.0.0",
+    "@angular/core": "^5.2.10",
+    "intl": "^1.2.5",
+    "ionic-angular": "^3.9.2",
+    "ionic2-calendar": "^0.4.3",
+    "moment": "^2.22.1"
+  }
+}

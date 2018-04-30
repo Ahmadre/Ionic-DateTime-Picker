@@ -1,0 +1,235 @@
+page-datepicker {
+
+    
+    #dateheader {
+        width: 100%;
+        min-height: 50px;
+        text-align: center;
+        color: #000;
+        font-size: x-large;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    ion-buttons {
+        display: contents;
+    }
+
+    .toolbar-ios ion-title {
+        padding: unset !important;
+        left: -28px !important;
+        top: 35px !important;
+    }
+
+    @media screen and (max-width: 320px) {
+        .toolbar-ios {
+            padding-bottom: 75px !important;
+        }
+    }
+
+    @media screen and (min-width: 321px) {   
+        .toolbar-content-ios {
+            padding-bottom: 35px !important;
+        }
+    }
+
+    #leftArrowBtn {
+        position: absolute;
+        left: 0;
+        top: 20px;
+    }
+
+    #rightArrowBtn {
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+
+    .scroll-content {
+        margin-top: 75px !important;
+        overflow: initial;
+    }
+
+    ion-slides {
+        display: block;
+        //height: 65%;
+    }
+
+    .slide-zoom {
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #yearSlides .swiper-slide {
+        opacity: 0.5 !important;
+        height: 50px !important;
+        align-items: center !important;
+    } 
+
+    #yearSlides.slides {
+        height: auto;
+      }
+
+      #yearModeContent .scroll-content {
+          overflow-y: auto !important;
+          background: linear-gradient(0deg, rgba(120,120,120,0.5) , transparent 20%);
+      }
+
+      #yearSlides .swiper-slide.swiper-slide-active {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #2c425a;
+        opacity: 1 !important;
+    }
+
+    #yearSlides .swiper-wrapper {
+        padding-top: 60%;
+    }
+
+      .item-datetime ion-datetime {
+        position: initial;
+      }
+      
+    #yearSlides.swiper-pagination {
+        bottom: 0px;
+    }
+
+    .swiper-slide {
+        width: 100% !important; 
+    }
+
+    ion-slide {
+        padding: 10px !important;
+        margin-top: -10px !important;
+    }
+
+    .monthview-selected[_ngcontent-c1] {
+        background-color: #2c425a;
+        color: white;
+    }
+
+    .table-bordered[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table-bordered[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table-bordered[_ngcontent-c1] > tfoot[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table-bordered[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1], .table-bordered[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1], .table-bordered[_ngcontent-c1] > tfoot[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1] {
+        border-radius: 50px;
+        border: none !important;
+    }
+
+    .table[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table[_ngcontent-c1] > tfoot[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1], .table[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1], .table[_ngcontent-c1] > tfoot[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1] {
+        line-height: 1.1 !important;
+    }
+
+    .table[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table[_ngcontent-c1] > tfoot[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1], .table[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1], .table[_ngcontent-c1] > tfoot[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1] {
+        padding: 7px !important;
+    }
+
+    [_nghost-c0] > div[_ngcontent-c0] {
+        height: 72% !important;
+    }
+
+    .text-muted[_ngcontent-c1] {
+        cursor: unset !important;
+        visibility: hidden !important;
+    }
+
+    #clearBtn{
+        margin-left: 10px;
+    }
+
+    #confirmBtn {
+        float: right;
+        margin-right: 10px;
+    }
+
+    #confirmIconOnlyBtn {
+        float: right;
+        padding: 0 !important;
+    }
+
+    .text-input-md,
+    .text-input-ios,
+    .text-input {
+        width: 80px !important;
+        float: left !important;
+        padding-left: 10px !important;
+    }
+
+    #timesymbol {
+        position: absolute;
+        left: 30px;
+        width: 20px;
+        height: 20px;
+        bottom: 20px;
+        font-size: 1.8rem;
+    }
+
+    #inpTime {
+        width: 70px !important;
+        font-size: 1.6rem;
+        padding-left: 20px;
+    }
+
+    button {
+        padding: 0 0.5em !important;
+    }
+
+    #yearBtn {
+        padding: 10px !important;
+    }
+
+    #yearBtn.button-ios {
+        position: absolute;
+        top: 0;
+    }
+
+    .toolbar-title {
+        font-size: 3rem;
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+
+    h4 {
+        display: contents;
+    }
+
+    table {    
+        border: none;
+    }
+
+    .table-bordered[_ngcontent-c1] {
+        border: none;
+    }
+
+    .event-detail-container[_ngcontent-c0] {
+        display: none;
+    }
+
+}
+
+.settings-datepicker-modal {
+    ion-backdrop {
+      visibility: visible !important;
+      opacity: 0.5 !important;
+      z-index: 0;
+    }
+    .modal-wrapper, .ios .modal-wrapper, .md .modal-wrapper, .wp .modal-wrapper {
+      position: absolute !important;
+      top: calc(50% - (420px/2)) !important;
+      left: calc(50% - (260px/2)) !important;
+      width: 260px !important;
+      height: 420px !important;
+      overflow: hidden !important;
+      z-index: 999 !important;
+      border-radius: 10px !important;
+      box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+      tbody {
+        font-size: 1.4rem;
+      }
+    }
+  }

@@ -1,0 +1,87 @@
+    <ion-header no-border>
+  
+      <ion-navbar>
+        <button ion-button clear id="yearBtn" (click)="setYear()" color="#f4f4f4">
+          {{ActualYear}}
+        </button>
+        <ion-title>{{ActualDate}}</ion-title>
+      </ion-navbar>
+    </ion-header>
+    
+    
+    <ion-content padding *ngIf="!yearMode">
+    
+        <div *ngIf="!isIOS" id="dateheader">
+            <ion-buttons left>
+              <button id="leftArrowBtn" ion-button icon-only clear round (click)="last()">
+                <ion-icon color="#222" name="ios-arrow-back"></ion-icon>
+              </button>
+            </ion-buttons>
+            <h5>{{ActualMonth}}</h5>
+            <ion-buttons right>
+              <button id="rightArrowBtn" ion-button icon-only clear round (click)="next()">
+                <ion-icon color="#222" name="ios-arrow-forward"></ion-icon>
+              </button>
+            </ion-buttons>
+          </div>
+          <div *ngIf="isIOS" id="dateheader">
+            <ion-buttons left style="position: absolute; top: 0; left: 0;">
+              <button id="leftArrowBtn" ion-button icon-only clear round (click)="last()">
+                <ion-icon color="#222" name="ios-arrow-back"></ion-icon>
+              </button>
+            </ion-buttons>
+            <h5 style="padding-top: 5px;">{{ActualMonth}}</h5>
+            <ion-buttons right style="position: absolute; top: 0; right: 0;">
+              <button id="rightArrowBtn" ion-button icon-only clear round (click)="next()">
+                <ion-icon color="#222" name="ios-arrow-forward"></ion-icon>
+              </button>
+            </ion-buttons>
+          </div>
+    
+       <!-- Kalender -->
+       <calendar [eventSource]="eventSource"
+       [calendarMode]="calendar.mode"
+       [currentDate]="calendar.currentDate"
+       [startingDayMonth]="1"
+       [startingDayWeek]="1"
+       (onCurrentDateChanged)="onCurrentDateChanged($event)"
+       (onEventSelected)="onEventSelected($event)"
+       (onTitleChanged)="onViewTitleChanged($event)"
+       (onTimeSelected)="onTimeSelected($event)"
+       step="30"
+       class="calendar"
+       [dateFormatter]="calendar.dateFormatter"
+       noEventsLabel=""
+       allDayLabel=""
+       >
+       </calendar>
+       <!-- Kalender -->
+       
+       <ion-icon *ngIf="Datetimepicker" id="timesymbol" color="hsl(0, 0%, 53.3%)" name="md-time"></ion-icon>
+       <ion-input *ngIf="Datetimepicker" id="inpTime" type="time" maxlength="5" placeholder="HH:mm" [(ngModel)]="choosenTime"></ion-input>
+    
+       <ion-buttons end *ngIf="Datetimepicker">
+          <button ion-button clear icon-only color="green" (click)="confirmPicker()" id="confirmIconOnlyBtn">
+              <ion-icon name="ios-checkmark-circle-outline"></ion-icon>
+          </button>
+          <button ion-button clear icon-only color="#A51F25" (click)="cancel()" id="confirmIconOnlyBtn">
+              <ion-icon name="ios-close-circle-outline"></ion-icon>
+          </button>
+        </ion-buttons>
+    
+       <ion-buttons end *ngIf="!Datetimepicker">
+         <button ion-button clear color="#2c425a" (click)="clearInput()" id="clearBtn">Clear</button>
+         <button ion-button clear color="#2c425a" (click)="cancel()">Cancel</button>
+         <button ion-button clear color="#2c425a" (click)="confirmPicker()" id="confirmBtn">OK</button>
+       </ion-buttons>
+    </ion-content>
+    
+    <ion-content padding *ngIf="yearMode" id="yearModeContent">
+    
+        <ion-slides #yearSlides id="yearSlides" (ionSlideDidChange)="selectYear($event)">
+            <ion-slide *ngFor="let year of years" (click)="selectYear()">
+              {{year}}
+            </ion-slide>
+        </ion-slides>
+    
+    </ion-content>

@@ -1,4 +1,4 @@
-# Telexiom Datepicker / Datetime-Picker
+# Ionic 3 Datepicker / Datetime-Picker
 
 ### Datepicker
 

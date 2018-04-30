@@ -2,11 +2,11 @@
 
 ### Datepicker
 
-![](screen.png)
+![](https://github.com/Ahmadre/Ionic3-Picker/blob/master/screen.png)
 
 ### Datetimepicker
 
-![](Datetimepicker.png)
+![](https://github.com/Ahmadre/Ionic3-Picker/blob/master/screen.png)
 
 - __Attention__: This Module requires an Ionic/Angular Project to function properly.
 

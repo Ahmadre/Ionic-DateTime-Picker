@@ -1,5 +1,7 @@
 # Ionic 3 Datepicker / Datetime-Picker
 
+## Works also for Ionic 4
+
 ### Datepicker
 
 ![](screen.png)

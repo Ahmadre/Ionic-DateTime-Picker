@@ -76,3 +76,8 @@ import { IonicErrorHandler } from 'ionic-angular';
 - __withTime__ (*boolean*, Optional) : Set Picker Mode to Date (*false*) or Datetime (*true*). Default: *false*
 - __minYear__ (*number*, Optional) : Set minimum year to pick in Year-Picker. Default: *now - 99 years*
 - __maxYear__ (*number*, Optional) : Set maximum year to pick in Year-Picker. Default: *now*
+
+## Support
+Like my work? You can support me here:
+
+<a href="https://www.buymeacoffee.com/wyXvWnH" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-green.png" alt="Buy Me A Coffee" width="200px"></a>
